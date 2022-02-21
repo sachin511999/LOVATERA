@@ -1,0 +1,62 @@
+ul.menu li a:hover {
+  transform: scale(1.1);
+}
+
+/*--------- SERVICE ----------*/
+
+.service .container .column {
+  position: relative;
+  cursor: pointer;
+}
+.service .container .column:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+.service .container .column1 {
+  position: relative;
+  cursor: pointer;
+}
+.service .container .column1:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background: rgba(138, 137, 135, 0.5);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.6s ease;
+}
+
+/*---------- GALLERY ----------*/
+
+.overlays {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  background: rgba(138, 137, 135, 0.5);
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: 0.7s ease;
+}
+
+.gallery .row .column {
+  position: relative;
+}
+.gallery .row .column:hover .overlays {
+  right: 0;
+  width: 100%;
+}
+.gallery .row .column1 {
+  position: relative;
+}
+.gallery .row .column1:hover .overlays {
+  right: 0;
+  width: 100%;
+}

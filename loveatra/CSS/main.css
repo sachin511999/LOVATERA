@@ -1,0 +1,375 @@
+:root {
+  --theme-heading-color-green: #99ca3c;
+  --theme-color-white: #ffffff;
+  --theme-color-pink: #f06ba8;
+  --theme-para-color-black: #4d4d4d;
+  --myfont-size: 16px;
+  --heading-font-family: "DM Sans", sans-serif;
+  --other-heading-color: black;
+  --para-font-family: "Murecho", sans-serif;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: var(--theme-color-white);
+  font-family: var(--heading-font-family);
+  letter-spacing: 5px;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+h2 {
+  font-weight: lighter;
+  font-size: 30px;
+}
+h4 {
+  font-size: 20px;
+  font-weight: normal;
+}
+h6 {
+  font-size: 20px;
+  font-weight: normal;
+  margin: 5px 0px;
+}
+
+p {
+  color: var(--theme-para-color-black);
+}
+
+a {
+  text-decoration: none;
+  color: var(--theme-color-white);
+}
+
+.container {
+  display: block;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.section-text-padding {
+  padding: 15% 10%;
+}
+.section-margin-top {
+  margin-top: 100px;
+}
+.section-margin-bottom {
+  margin-bottom: 50px;
+}
+.section-padding-side {
+  padding: 0px 120px;
+}
+.footer-section-padding {
+  padding: 20px 0px;
+}
+/* Header Style start */
+
+.header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: rgb(71, 48, 36, 0.5);
+  max-height: 110px;
+}
+.header .row .column:first-child {
+  width: 30%;
+}
+.header .row .column:last-child {
+  width: 70%;
+}
+#logo {
+  max-height: 80px;
+  margin: 3px 0px;
+}
+ul.menu {
+  display: block;
+  text-align: right;
+  line-height: 80px;
+}
+ul.menu li {
+  display: inline-block;
+  line-height: 0px;
+  margin-left: 20px;
+  box-shadow: 0px 0px 10px #ccc;
+}
+ul.menu li a {
+  color: var(--theme-color-white);
+  font-size: 15px;
+  display: block;
+  font-family: var(--para-font-family);
+  transition: transform 0.2s;
+  text-shadow: 0px 1px 2px rgb(0, 0, 0);
+}
+
+/*   BANNNER SECTION    */
+
+.banner {
+  background-image: url(../images/banner.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.banner .row .column:first-child {
+  background-color: var(--theme-heading-color-green);
+  padding: 5px 8px;
+  padding: 10px;
+  text-align: center;
+}
+.banner .row .column:last-child {
+  margin-left: 4px;
+  text-align: center;
+  padding: 10px;
+}
+.banner .row p {
+  color: var(--theme-color-white);
+  line-height: 33px;
+  font-size: 18px;
+}
+
+/*   ABOUT SECTION    */
+
+.about {
+  background-image: url(../images/lef.svg);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+.about .row .column:first-child h2 {
+  background-image: url(../images/text-hedding-bg-pink.png);
+  background-repeat: no-repeat;
+  height: 25%;
+
+  background-position: left;
+  padding: 30px 0 0 25px;
+  font-size: 40px;
+  color: var(--theme-heading-color-green);
+}
+.about-img-resize {
+  height: 300px;
+  width: 100%;
+}
+.btn-pink {
+  background-color: var(--theme-color-pink);
+  padding: 5px 10px;
+  border: var(--theme-color-pink);
+  margin-top: 20px;
+}
+.about .row .column:last-child h2 {
+  color: var(--theme-para-color-black);
+  margin: 20px 0px;
+}
+.about .row .column:last-child p {
+  color: var(--theme-para-color-black);
+  text-align: center;
+  margin: 20px 0px;
+}
+.about .row .column:first-child {
+  width: 55%;
+  bottom: 0px 0px;
+}
+.about .row .column:last-child {
+  width: 45%;
+  height: 500px;
+  box-shadow: 0px 0px 8px 8px rgba(214, 210, 210, 0.75);
+  text-align: center;
+  padding: 25px;
+}
+
+/*      BEAUTY DEAL     */
+
+.deal {
+  background-image: url(../images/Beauty-Deal-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 55%;
+}
+
+.deal .container h2 {
+  background-image: url(../images/text-hedding-bg-yellow.png);
+  background-repeat: no-repeat;
+  height: 40%;
+  background-position: left;
+  padding: 44px 0 0 19px;
+  color: var(--theme-para-color-black);
+}
+
+/*    SERVICE SECTION     */
+.service .container {
+  text-align: center;
+}
+.service h2 {
+  background-image: url(../images/text-hedding-bg-pink.png);
+  background-repeat: no-repeat;
+  height: 25%;
+  background-position: center;
+  padding: 52px 0px 0px 0px;
+  color: var(--theme-para-color-black);
+}
+.service .container .column {
+  height: 250px;
+  width: 30%;
+  margin: 10px;
+}
+.service .container .column h4 {
+  margin-top: 200px;
+}
+
+.arrow-color {
+  height: 23px;
+  width: auto;
+  margin-bottom: -5px;
+}
+.service .container .column:first-child {
+  background-image: url(../images/Dermal\ Fillers.jpg);
+}
+.service .container .column:nth-child(2) {
+  background-image: url(../images/Wrinkle\ Injections.jpg);
+}
+.service .container .column:last-child {
+  background-image: url(../images/PRP.jpg);
+}
+
+.service .container .column1 {
+  height: 250px;
+  width: 30%;
+  margin: 10px;
+}
+.service .container .column1 h4 {
+  margin-top: 200px;
+}
+
+.service .container .column1:first-child {
+  background-image: url(../images/Fat\ Dissolving\ Injections.jpg);
+}
+.service .container .column1:nth-child(2) {
+  background-image: url(../images/B12.jpg);
+}
+.service .container .column1:last-child {
+  background-image: url(../images/Hydraderm\ Ultrasonic\ Facial.jpg);
+}
+
+/*    Gallery Section   */
+
+.gallery .container {
+  text-align: center;
+}
+.gallery h2 {
+  background-image: url(../images/text-hedding-bg-yellow.png);
+  background-repeat: no-repeat;
+  height: 20%;
+  background-position: center;
+  padding: 40px 0px 0px 0px;
+  color: var(--theme-para-color-black);
+}
+.gallery .row {
+  width: 100%;
+}
+.gallery .column {
+  height: 250px;
+  width: 20%;
+}
+.gallery .column:first-child {
+  background-image: url(../images/Gallery-1.jpg);
+}
+.gallery .column:nth-child(2) {
+  background-image: url(../images/Gallery-2.jpg);
+}
+.gallery .column:nth-child(3) {
+  background-image: url(../images/Gallery-3.jpg);
+  background-position: top right;
+}
+.gallery .column:nth-child(4) {
+  background-image: url(../images/Gallery-4.jpg);
+}
+.gallery .column:last-child {
+  background-image: url(../images/Gallery-5.jpg);
+}
+
+.gallery .column1 {
+  height: 250px;
+  width: 20%;
+}
+.gallery .column1:first-child {
+  background-image: url(../images/Gallery-6.jpg);
+}
+.gallery .column1:nth-child(2) {
+  background-image: url(../images/Gallery-7.jpg);
+}
+.gallery .column1:nth-child(3) {
+  background-image: url(../images/Gallery-8.jpg);
+}
+.gallery .column1:nth-child(4) {
+  background-image: url(../images/Gallery-9.jpg);
+}
+.gallery .column1:last-child {
+  background-image: url(../images/Gallery-10.jpg);
+}
+
+/*    Footer section        */
+
+.footer .column {
+  height: 150px;
+  width: 25%;
+}
+.footer .container .column:first-child {
+  width: 20%;
+  padding: 20px;
+  background-image: url(../images/Logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.footer .container .column:nth-child(2),
+.footer .container .column:nth-child(3) {
+  width: 20%;
+  padding: 20px;
+  text-align: justify;
+  line-height: 25px;
+}
+.footer .container .column:last-child {
+  padding: 20px;
+  text-align: justify;
+  line-height: 25px;
+  width: 40%;
+}
+.footer .container .column:last-child input[type="email"] {
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid var(--theme-para-color-black);
+}
+input[type="email"]:focus {
+  outline: none;
+}
+
+.send-btn {
+  border: none;
+  border-bottom: 1px solid var(--theme-para-color-black);
+  background: transparent;
+  margin-left: -4px;
+}
+
+/*   /////////////////   */
+
+.border-up {
+  border-top: 1px solid #969696;
+}
+.footer .row .container {
+  display: flex;
+  width: 1040px;
+  justify-content: space-around;
+  padding: 5px 0px;
+  color: #969696;
+}
